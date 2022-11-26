@@ -121,8 +121,14 @@
   <data name="Arhitectura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Arhitectura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Arte_si_design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arte_si_design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Chimie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chimie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chimie_si_biologie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chimie_si_biologie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Comunicatii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comunicatii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,16 +136,52 @@
   <data name="constructii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\constructii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Drept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Economie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Economie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Educatie_fizica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Educatie_fizica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Electro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Electro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Facultati_UPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Facultati UPT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fizica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fizica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Litere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Litere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="management_si_transporturi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\management_si_transporturi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mate_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mate_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mecanica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mecanica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medicina_dentara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medicina_dentara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medicina_farmacie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medicina_farmacie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muzica_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muzica_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Psihologie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Psihologie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stinte_politice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stinte_politice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Veterinara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Veterinara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
