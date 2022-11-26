@@ -18,7 +18,6 @@ namespace WinFormsApp4
         {
             InitializeComponent();
         }
-        //string[,] universitati = new string[,] { { } };
         List<List<string>> universitatiList = new List<List<string>>()
         {
             new List<string> { "Arhitectura si Urbanism", "Automatica si Calculatoare", "Chimie Industriala si Ingineria Mediului", "Constructii", "Electronica, Telecomunicatii si Tehnologii Informationale", "Inginerie Electrica si Energetica", "Management in Productie si Transporturi", "Mecanica", "Stinte ale comunicarii" },
@@ -26,7 +25,13 @@ namespace WinFormsApp4
             new List<string> { "Facultatea de Medicina", "Facultatea de Medicina Dentara", "Facultatea de farmacie"}
             
         };
-        
+        List<List<string>> locatii = new List<List<string>>()
+        {
+            new List<string> { "Biblioteca", "Cantina", "Profi", "Medlife - 20% discount", "Loolish gaming - 24% discount", "Tucano - 10% discount", "STTP - transport in comun gratuit in oras", "Banca Transilvania", "LikePub"},
+            new List<string> { "Cantina", "Profi", "STTP", "Banca Transilvania", "LikePub"},
+            new List<string> { "Profi", "STTP", "Banca Transilvania", "LikePub"}
+        };
+
         private void Form2_Load(object sender, EventArgs e)
         {
             listBox1.Size = this.Size;
@@ -34,6 +39,11 @@ namespace WinFormsApp4
             for (int i = 0; i < universitatiList[Form1.optiune].Count(); i++)
                 listBox1.Items.Add("                " + universitatiList[Form1.optiune][i]);
             listBox1.BackColor = Color.FromArgb(216, 114, 114);
+            listBox1.Items.Add("");
+            listBox1.Items.Add("Locuri utile!");
+
+            for (int i = 0; i < locatii[Form1.optiune].Count(); i++)
+                listBox1.Items.Add("                " + locatii[Form1.optiune][i]);
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -46,13 +56,14 @@ namespace WinFormsApp4
         private void Form2_Resize(object sender, EventArgs e)
         {
             listBox1.Size = this.Size;
+            
         }
-        public int x = Form1.optiune, y;
+        public int x = Form1.optiune, y, z;
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex == -1) return;
+            z = listBox1.Items.Count;
             y = listBox1.SelectedIndex - 1;
-            if (y < 0) return;
             if (x == 0)
                 switch (y)
                 {
@@ -83,6 +94,36 @@ namespace WinFormsApp4
                     case 8:
                         this.BackgroundImage = Properties.Resources.constructii;
                         break;
+                    case 11: 
+                        this.BackgroundImage = Properties.Resources.biblioteca;
+                        break;
+                    case 12:
+                        this.BackgroundImage = Properties.Resources.Cantina_upt;
+                        break;
+                    case 13:
+                        this.BackgroundImage = Properties.Resources.profi;
+                        break;
+                    case 14:
+                        this.BackgroundImage = Properties.Resources.Medlife;
+                        break;
+                    case 15:
+                        this.BackgroundImage = Properties.Resources.Loolish;
+                        break;
+                    case 16:
+                        this.BackgroundImage = Properties.Resources.tucano;
+                        break;
+                    case 17:
+                        this.BackgroundImage = Properties.Resources.sttp;
+                        break;
+                    case 18:
+                        this.BackgroundImage = Properties.Resources.Transilvania;
+                        break;
+                    case 19:
+
+                        break;
+                    default:
+                        listBox1.SelectedIndex = -1;
+                        return;
                 }
             else if (x == 1)
                 switch (y)
@@ -120,6 +161,24 @@ namespace WinFormsApp4
                     case 10:
                         this.BackgroundImage = Properties.Resources.Stinte_politice;
                         break;
+                    case 13:
+                        this.BackgroundImage = Properties.Resources.cantina_uvt;
+                        break;
+                    case 14:
+                        this.BackgroundImage = Properties.Resources.profi;
+                        break;
+                    case 15:
+                        this.BackgroundImage = Properties.Resources.sttp;
+                        break;
+                    case 16:
+                        this.BackgroundImage = Properties.Resources.Transilvania;
+                        break;
+                    case 17:
+
+                        break;
+                    default:
+                        listBox1.SelectedIndex = -1;
+                        return;
                 }
             else if(x == 2) 
                 switch (y)
@@ -133,6 +192,21 @@ namespace WinFormsApp4
                     case 2:
                         this.BackgroundImage = Properties.Resources.Veterinara;
                         break;
+                    case 5:
+                        this.BackgroundImage = Properties.Resources.profi;
+                        break;
+                    case 6:
+                        this.BackgroundImage = Properties.Resources.sttp;
+                        break;
+                    case 7:
+                        this.BackgroundImage = Properties.Resources.Transilvania;
+                        break;
+                    case 8:
+
+                        break;
+                    default:
+                        listBox1.SelectedIndex = -1;
+                        return;
                 }
 
             
@@ -210,7 +284,60 @@ namespace WinFormsApp4
                             FileName = "https://www.google.ro/maps/place/Faculty+of+Communication+Sciences/@45.7455739,21.2276895,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d84b850fb9d:0x8bc606f7255883f3!8m2!3d45.7455702!4d21.2298782?hl=en-GB",
                             UseShellExecute = true
                         }); break;
-
+                    case 11:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Central+Library+of+the+University+Politehnica+Timisoara/@45.7472551,21.2269008,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d8379426181:0x19ac8b7ef5fffe7c!8m2!3d45.747264!4d21.2290863",
+                            UseShellExecute = true
+                        }); break;
+                    case 12:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Restaurant+Universitar+Politehnica/@45.7483514,21.2374185,17.33z/data=!4m5!3m4!1s0x47455d88c86bf153:0xf59dd6cf2bf96624!8m2!3d45.7483727!4d21.239718",
+                            UseShellExecute = true
+                        }); break;
+                    case 13:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Profi/@45.748881,21.2361217,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d88bcc5bb05:0x1deb4b6fa72ed4f7!8m2!3d45.748881!4d21.239458",
+                            UseShellExecute = true
+                        }); break;
+                    case 14:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Hyperclinica+MedLife+Timisoara+-+Dragalina/@45.7473308,21.2131282,15.18z/data=!4m5!3m4!1s0x47455d65435372b7:0x8018f8ca9fafaf!8m2!3d45.7488466!4d21.2083658",
+                            UseShellExecute = true
+                        }); break;
+                    case 15:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Loolish+Gaming/@45.7477514,21.2401963,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d893697a3c5:0xe4a715f567f73f86!8m2!3d45.7477514!4d21.242385",
+                            UseShellExecute = true
+                        }); break;
+                    case 16:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Tucano+Coffee+Thailand/@45.7488801,21.2347181,17z/data=!3m1!4b1!4m5!3m4!1s0x47455da84a50cda7:0x4e17c038fc7af980!8m2!3d45.7488802!4d21.2392028",
+                            UseShellExecute = true
+                        }); break;
+                    case 17:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/R.A.T.T/@45.756559,21.2224434,16.6z/data=!4m5!3m4!1s0x4745678090838b6f:0x2d812c62821c0331!8m2!3d45.7563082!4d21.2243644",
+                            UseShellExecute = true
+                        }); break;
+                    case 18:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Banca+Transilvania/@45.7499631,21.2339891,17z/data=!3m2!4b1!5s0x47455d8628d5c7c9:0xb5d1372f9345c14a!4m5!3m4!1s0x47455d890e486b95:0x65e9d3dca78349!8m2!3d45.7499632!4d21.2384738",
+                            UseShellExecute = true
+                        }); break;
+                    case 19:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Like+Pub+Timisoara/@45.7502235,21.2413178,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d89b1c61c9d:0x4199ab4b3a2a0780!8m2!3d45.7502198!4d21.2435065",
+                            UseShellExecute = true
+                        }); break;
                 }
             
             else if (x == 1)
@@ -282,6 +409,36 @@ namespace WinFormsApp4
                             FileName = "https://www.google.ro/maps/place/Facultatea+de+%C8%98tiin%C8%9Be+Politice,+Filosofie+%C8%99i+%C8%98tiin%C8%9Be+ale+Comunic%C4%83rii/@45.7475244,21.2293049,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d847c90969b:0xda8eb9d3a5730b77!8m2!3d45.7475207!4d21.2314936?hl=en-GB",
                             UseShellExecute = true
                         }); break;
+                    case 13:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Bulevardul+Vasile+P%C3%A2rvan+4,+Timi%C8%99oara+300222/@45.7473307,21.2291348,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d54949311ab:0x3a74d0271efa99ad!8m2!3d45.7473307!4d21.2313235",
+                            UseShellExecute = true
+                        }); break;
+                    case 14:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Profi/@45.748881,21.2361217,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d88bcc5bb05:0x1deb4b6fa72ed4f7!8m2!3d45.748881!4d21.239458",
+                            UseShellExecute = true
+                        }); break;
+                    case 15:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/R.A.T.T/@45.756559,21.2224434,16.6z/data=!4m5!3m4!1s0x4745678090838b6f:0x2d812c62821c0331!8m2!3d45.7563082!4d21.2243644",
+                            UseShellExecute = true
+                        }); break;
+                    case 16:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Banca+Transilvania/@45.7499631,21.2339891,17z/data=!3m2!4b1!5s0x47455d8628d5c7c9:0xb5d1372f9345c14a!4m5!3m4!1s0x47455d890e486b95:0x65e9d3dca78349!8m2!3d45.7499632!4d21.2384738",
+                            UseShellExecute = true
+                        }); break;
+                    case 17:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Like+Pub+Timisoara/@45.7502235,21.2413178,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d89b1c61c9d:0x4199ab4b3a2a0780!8m2!3d45.7502198!4d21.2435065",
+                            UseShellExecute = true
+                        }); break;
                 }
             else if(x == 2)
                 switch (y)
@@ -302,6 +459,30 @@ namespace WinFormsApp4
                         Process.Start(new ProcessStartInfo
                         {
                             FileName = "https://www.google.ro/maps/place/Faculty+of+Veterinary+Medicine/@45.7836958,21.2142487,17z/data=!3m1!4b1!4m5!3m4!1s0x474567c6e59aa7b7:0x8aa6ff5fe1fd389a!8m2!3d45.7836921!4d21.2164374?hl=en-GB",
+                            UseShellExecute = true
+                        }); break;
+                    case 5:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Profi/@45.748881,21.2361217,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d88bcc5bb05:0x1deb4b6fa72ed4f7!8m2!3d45.748881!4d21.239458",
+                            UseShellExecute = true
+                        }); break;
+                    case 6:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/R.A.T.T/@45.756559,21.2224434,16.6z/data=!4m5!3m4!1s0x4745678090838b6f:0x2d812c62821c0331!8m2!3d45.7563082!4d21.2243644",
+                            UseShellExecute = true
+                        }); break;
+                    case 7:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Banca+Transilvania/@45.7499631,21.2339891,17z/data=!3m2!4b1!5s0x47455d8628d5c7c9:0xb5d1372f9345c14a!4m5!3m4!1s0x47455d890e486b95:0x65e9d3dca78349!8m2!3d45.7499632!4d21.2384738",
+                            UseShellExecute = true
+                        }); break;  
+                    case 8:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.com/maps/place/Like+Pub+Timisoara/@45.7502235,21.2413178,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d89b1c61c9d:0x4199ab4b3a2a0780!8m2!3d45.7502198!4d21.2435065",
                             UseShellExecute = true
                         }); break;
                 }
