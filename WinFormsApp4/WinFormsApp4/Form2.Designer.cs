@@ -33,13 +33,14 @@
             // 
             // listBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
+            this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(788, 424);
+            this.listBox1.Size = new System.Drawing.Size(224, 104);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form2
             // 
@@ -51,6 +52,7 @@
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.Resize += new System.EventHandler(this.Form2_Resize);
             this.ResumeLayout(false);
 
         }

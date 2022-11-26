@@ -27,13 +27,27 @@ namespace WinFormsApp4
         
         private void Form2_Load(object sender, EventArgs e)
         {
+            listBox1.Size = this.Size;
             for (int i = 0; i < universitatiList[Form1.optiune].Count(); i++)
                 listBox1.Items.Add(universitatiList[Form1.optiune][i]);
+            listBox1.BackColor = Color.FromArgb(216, 114, 114);
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+       
+
+        private void Form2_Resize(object sender, EventArgs e)
+        {
+            listBox1.Size = this.Size;
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

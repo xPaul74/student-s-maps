@@ -7,13 +7,7 @@ namespace WinFormsApp4
             InitializeComponent();
         }
         public static int optiune;
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            optiune = listBox1.SelectedIndex;
-            Form2 form2 = new Form2();
-            this.Hide();
-            form2.ShowDialog();
-        }
+        
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -24,8 +18,30 @@ namespace WinFormsApp4
         {
             label1.BackColor = Color.FromArgb(233, 244, 177);
             label2.BackColor = Color.FromArgb(233, 244, 177);
-            listBox1.BackColor = Color.FromArgb(233, 244, 177);
-            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            optiune = 0;
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            optiune = 1;
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            optiune = 2;
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.ShowDialog();
         }
     }
 }
