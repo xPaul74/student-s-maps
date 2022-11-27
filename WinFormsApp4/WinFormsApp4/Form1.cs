@@ -51,8 +51,8 @@ namespace WinFormsApp4
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatAppearance.BorderColor = Color.Gray;
+            button1.FlatAppearance.BorderSize = 3;
+            button1.FlatAppearance.BorderColor = Color.FromArgb(233, 244, 177);
             
         }
 
@@ -63,8 +63,8 @@ namespace WinFormsApp4
         }
         private void button2_MouseEnter(object sender, EventArgs e)
         {
-            button2.FlatAppearance.BorderSize = 2;
-            button2.FlatAppearance.BorderColor = Color.Gray;
+            button2.FlatAppearance.BorderSize = 3;
+            button2.FlatAppearance.BorderColor = Color.FromArgb(233, 244, 177);
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace WinFormsApp4
         private void button3_MouseEnter(object sender, EventArgs e)
         {
             button3.FlatAppearance.BorderSize = 2;
-            button3.FlatAppearance.BorderColor = Color.Gray;
+            button3.FlatAppearance.BorderColor = Color.FromArgb(233, 244, 177);
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
