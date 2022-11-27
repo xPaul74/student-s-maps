@@ -93,6 +93,26 @@ namespace WinFormsApp4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Biblioteca_Eugen {
+            get {
+                object obj = ResourceManager.GetObject("Biblioteca_Eugen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Biblioteca_UMFT {
+            get {
+                object obj = ResourceManager.GetObject("Biblioteca_UMFT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cantina_upt {
             get {
                 object obj = ResourceManager.GetObject("Cantina_upt", resourceCulture);
@@ -206,6 +226,26 @@ namespace WinFormsApp4.Properties {
         internal static System.Drawing.Bitmap Fizica {
             get {
                 object obj = ResourceManager.GetObject("Fizica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iulius {
+            get {
+                object obj = ResourceManager.GetObject("Iulius", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap like {
+            get {
+                object obj = ResourceManager.GetObject("like", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

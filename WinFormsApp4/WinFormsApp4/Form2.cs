@@ -27,9 +27,9 @@ namespace WinFormsApp4
         };
         List<List<string>> locatii = new List<List<string>>()
         {
-            new List<string> { "Biblioteca", "Cantina", "Profi", "Medlife - 20% discount", "Loolish gaming - 24% discount", "Tucano - 10% discount", "STTP - transport in comun gratuit in oras", "Banca Transilvania", "LikePub"},
-            new List<string> { "Cantina", "Profi", "STTP", "Banca Transilvania", "LikePub"},
-            new List<string> { "Profi", "STTP", "Banca Transilvania", "LikePub"}
+            new List<string> { "Biblioteca", "Cantina", "Profi", "Medlife - 20% discount", "Loolish gaming - 24% discount", "Tucano - 10% discount", "STTP - transport in comun gratuit in oras", "Banca Transilvania", "LikePub", "Iulius mall"},
+            new List<string> { "Cantina", "Profi", "STTP", "Banca Transilvania", "LikePub", "Biblioteca", "Iulius mall"},
+            new List<string> { "Profi", "STTP", "Banca Transilvania", "LikePub", "Biblioteca", "Iulius mall"}
         };
 
         private void Form2_Load(object sender, EventArgs e)
@@ -119,7 +119,10 @@ namespace WinFormsApp4
                         this.BackgroundImage = Properties.Resources.Transilvania;
                         break;
                     case 19:
-
+                        this.BackgroundImage = Properties.Resources.like;
+                        break;
+                    case 20:
+                        this.BackgroundImage = Properties.Resources.Iulius;
                         break;
                     default:
                         listBox1.SelectedIndex = -1;
@@ -174,7 +177,13 @@ namespace WinFormsApp4
                         this.BackgroundImage = Properties.Resources.Transilvania;
                         break;
                     case 17:
-
+                        this.BackgroundImage = Properties.Resources.like;
+                        break;
+                    case 18:
+                        this.BackgroundImage = Properties.Resources.Biblioteca_Eugen;
+                        break;
+                    case 19:
+                        this.BackgroundImage = Properties.Resources.Iulius;
                         break;
                     default:
                         listBox1.SelectedIndex = -1;
@@ -202,7 +211,13 @@ namespace WinFormsApp4
                         this.BackgroundImage = Properties.Resources.Transilvania;
                         break;
                     case 8:
-
+                        this.BackgroundImage = Properties.Resources.like;
+                        break;
+                    case 9:
+                        this.BackgroundImage = Properties.Resources.Biblioteca_UMFT;
+                        break;
+                    case 10:
+                        this.BackgroundImage = Properties.Resources.Iulius;
                         break;
                     default:
                         listBox1.SelectedIndex = -1;
@@ -338,6 +353,12 @@ namespace WinFormsApp4
                             FileName = "https://www.google.com/maps/place/Like+Pub+Timisoara/@45.7502235,21.2413178,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d89b1c61c9d:0x4199ab4b3a2a0780!8m2!3d45.7502198!4d21.2435065",
                             UseShellExecute = true
                         }); break;
+                    case 20:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.ro/maps/place/Iulius+Town/@45.7669375,21.2237868,17z/data=!3m1!4b1!4m5!3m4!1s0x474567c28251367f:0xdad4d0d2dc253876!8m2!3d45.7669338!4d21.2282715?hl=en-GB",
+                            UseShellExecute = true
+                        }); break;
                 }
             
             else if (x == 1)
@@ -439,6 +460,18 @@ namespace WinFormsApp4
                             FileName = "https://www.google.com/maps/place/Like+Pub+Timisoara/@45.7502235,21.2413178,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d89b1c61c9d:0x4199ab4b3a2a0780!8m2!3d45.7502198!4d21.2435065",
                             UseShellExecute = true
                         }); break;
+                    case 18:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.ro/maps/place/Central+University+Library+Eugen+Todoran/@45.7474146,21.2305882,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d844fd33e6b:0xe91b57ba5c4a1c03!8m2!3d45.7474109!4d21.2327769?hl=en-GB",
+                            UseShellExecute = true
+                        }); break;
+                    case 19:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.ro/maps/place/Iulius+Town/@45.7669375,21.2237868,17z/data=!3m1!4b1!4m5!3m4!1s0x474567c28251367f:0xdad4d0d2dc253876!8m2!3d45.7669338!4d21.2282715?hl=en-GB",
+                            UseShellExecute = true
+                        }); break;
                 }
             else if(x == 2)
                 switch (y)
@@ -483,6 +516,18 @@ namespace WinFormsApp4
                         Process.Start(new ProcessStartInfo
                         {
                             FileName = "https://www.google.com/maps/place/Like+Pub+Timisoara/@45.7502235,21.2413178,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d89b1c61c9d:0x4199ab4b3a2a0780!8m2!3d45.7502198!4d21.2435065",
+                            UseShellExecute = true
+                        }); break; 
+                    case 9:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.ro/maps/place/Splaiul+Tudor+Vladimirescu+2,+Timi%C8%99oara+300193/@45.7478057,21.222173,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d828d246ee3:0x78ba6c7dd9b7de1a!8m2!3d45.747802!4d21.2243617?hl=en-GB",
+                            UseShellExecute = true
+                        }); break;
+                    case 10:
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://www.google.ro/maps/place/Iulius+Town/@45.7669375,21.2237868,17z/data=!3m1!4b1!4m5!3m4!1s0x474567c28251367f:0xdad4d0d2dc253876!8m2!3d45.7669338!4d21.2282715?hl=en-GB",
                             UseShellExecute = true
                         }); break;
                 }
